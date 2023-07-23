@@ -11,9 +11,26 @@
     */
 
     // Entrada
+    const distancia = Number (prompt(`qual a distancia da viagem em quilometros`))
+    const dia = Number (prompt(`quantos quilometros deseja viajar por dia`))
+    
     
     // Processamento
+    total = distancia / dia
 
     // Saída
+    if(total <= 3){
+        alert(`a viagem demorará ${total} dias e deverá ser realizada em qualquer periodo`)
+    }
+    else if (total <= 10){
+        alert(`a viagem demorará ${total} dias e deverá ser realizada em Ferias de junho`)
+    }
+    else if(total <= 20){
+        alert(`a viagem demorará ${total} dias e deverá ser realizada emFerias de verão`)
+    }
+    else if(total >= 21){
+        alert(`a viagem demorará ${total} dias e deverá ser realizada emDevara trabalhar em trabalho remoto`)
+    }
+    
 
 </script>

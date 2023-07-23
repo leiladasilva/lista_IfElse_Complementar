@@ -15,9 +15,28 @@
     */
 
     // Entrada
+    const viagem = Number (prompt(`quantas viagem foram realizadas por dia`))
+    const cargo = prompt(`qual cargo ocupa`)
     
     // Processamento
+    total = viagem * 100
+
 
     // Saída
+if(cargo = "motorista" || viagem <= 10){
+      total1 = total + (total * 20/100)
+    alert(`você é motorista e terá um salario de ${total1}`)
+}
+else if (cargo = "motorista" || viagem >= 11){
+    total2 = total + (total * 35/100)
+    alert(`você é motorista e ficara com um salario de ${total2}`)
+}
+else if(cargo = "cobrador" || viagem <= 10 ){
+    alert(`seu salario ficará ${total}`)
+}
+else if (cargo = "cobrador" || viagem <=11){
+    total3 = total + (total * 10/100)
+    alert(`seu salario ficará ${total3}`)
+}
 
 </script>

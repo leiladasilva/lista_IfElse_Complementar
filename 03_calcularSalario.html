@@ -15,8 +15,25 @@
     */
 
     // Entrada
+    const salario = Number (prompt(`por favor informe seu salario mensal`))
     
     // Processamento
+    if(salario <= 1999){
+        salario1= salario + (salario * 15/100)
+        alert(`seu salario terá um reajuste e ficara ${salario1}`)
+    }
+    else if(salario <= 3999){
+        salario2 = salario + (salario * 10/100)
+        alert(`seu salario terá um reajuste e ficará ${salario2}`)
+    }
+    else if(salario <= 4000){
+        salario3 = salario + (salario * 7.5/100)
+        alert(`seu salario terá um reajuste e ficará ${salario3}`)
+    }
+    else if(salario >= 7000){
+        salario4 = salario + (salario * 5/100)
+        alert(`seu salario terá um reajuste e ficará ${salario4}`)
+    }
 
     // Saída
 
